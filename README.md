@@ -1,3 +1,3 @@
 # AstroRust
 
-Astrodynamics library in Rust. Currently working progress.
+Currently working progress. Astrodynamics library in Rust.
