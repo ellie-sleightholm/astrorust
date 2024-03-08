@@ -1,4 +1,4 @@
-# MMS-Core IO Files
+# AstroRust IO Files
 This documentation provides information about the IO files within MMS. This document will continue to be updated with any changes.
 
 The IO file contains all functions associated with external files. For example, retrieving files from websites (IERS, NASA, etc.) for data that is needed in our calculations. A list of the functions is described below:
