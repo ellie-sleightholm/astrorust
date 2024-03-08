@@ -20,17 +20,4 @@ linked-hash-map = "0.5"
 flame = "0.2.2"
 nalgebra = "0.32.3"
 num-traits = "0.2.17"
-simba = "0.8.1"
-thiserror = "1.0.50"
-splines = "4.3.1"
-serde = "1.0"
-serde_derive = "1.0.188"
-interp1d = "0.2.0"
 reqwest = { version = "0.10.0-alpha.2", features = ["blocking"] }
-
-[dev-dependencies]
-criterion = { version = "0.4", features = ["html_reports"] }
-
-
-
-
