@@ -1,7 +1,7 @@
 /target
 /data/*
 
-# Will input later one anonymised
+# To include later 
 /src/time/
 /examples/time.rs
 /tests/*
