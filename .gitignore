@@ -4,5 +4,5 @@
 # Will input later one anonymised
 /src/time/
 /examples/time.rs
-/tests/
+/tests/*
 src/data_utils/README.md
