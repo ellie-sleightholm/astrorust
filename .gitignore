@@ -1,0 +1,8 @@
+/target
+/data/*
+
+# To add later
+/src/time/
+/examples/time.rs
+/tests/*
+src/data_utils/README.md
