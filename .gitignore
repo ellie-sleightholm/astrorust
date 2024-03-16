@@ -2,7 +2,7 @@
 /data/*
 
 # To include later 
-/src/time/
+/src/time/time_old.rs
 /examples/time.rs
 /tests/*
 src/data_utils/README.md

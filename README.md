@@ -26,7 +26,7 @@ This will build everything you need to use astrorust.
 
 will execute the time example. 
 
-# Examples
+# Examples 
 
 ### Example 1 - Conversion Between Timesystems
 Let's define a time variable `tai_jd` which corresponds to a date in
