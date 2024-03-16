@@ -29,14 +29,12 @@ impl Time {
     }
 
     pub fn set_julian_days(&mut self, jd: f64) {
-        let (days_whole, seconds_whole, seconds_fraction) = from_jd_to_tuple(jd);
-        self.whole_days = days_whole;
-        self.whole_seconds = seconds_whole;
-        self.fractional_seconds = seconds_fraction;
+        (self.whole_days, self.whole_seconds, self.fractional_seconds) =
+            convert_jd_to_days_and_seconds(jd);
     }
 }
 
-pub fn from_jd_to_tuple(jd: f64) -> (u64, u64, f64) {
+pub fn convert_jd_to_days_and_seconds(jd: f64) -> (u64, u64, f64) {
     let (days, fractional_days) = compute_quotient_and_remainder(jd, 1.0);
     let (seconds, seconds_fraction) = compute_quotient_and_remainder(fractional_days * DAY_S, 1.0);
     return (days, seconds, seconds_fraction);
@@ -44,4 +42,21 @@ pub fn from_jd_to_tuple(jd: f64) -> (u64, u64, f64) {
 
 pub fn compute_quotient_and_remainder(numerator: f64, denominator: f64) -> (u64, f64) {
     ((numerator / denominator) as u64, numerator % denominator)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_convert_jd_to_days_and_seconds() {
+        // Test case: Julian day equivalent to 2.5 days
+        let jd = 2.5;
+        let (expected_days, expected_seconds, expected_fractional_seconds) = (2, 43200, 0.0);
+        let (actual_days, actual_seconds, actual_fractional_seconds) =
+            convert_jd_to_days_and_seconds(jd);
+        assert_eq!(actual_days, expected_days);
+        assert_eq!(actual_seconds, expected_seconds);
+        assert_eq!(actual_fractional_seconds, expected_fractional_seconds);
+    }
 }
