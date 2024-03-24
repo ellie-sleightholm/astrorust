@@ -2,7 +2,7 @@
 
 ![Version 0.0.1](https://img.shields.io/badge/version-0.0.1-blue)
 
-An astrodynamics Rust library.
+An astrodynamics Rust library. Please note, I am in the process of building this to be used as a public crate. 
 
 # Build Instructions
 These instructions assume that Rust and Cargo are installed on your system. 
@@ -25,9 +25,3 @@ This will build everything you need to use astrorust.
     ```
 
 will execute the time example. 
-
-Likewise, we can take a TAI calendar and format it as a string:
-```rust
-let tai_cal_to_string = from_tai_calendar_to_gregorian(2000, 1, 1, 0, 0.0, 0.0);
-assert_eq!(tai_cal_to_string, "2000-01-01T00:00:00.000");
-```
