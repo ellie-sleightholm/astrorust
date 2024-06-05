@@ -2,7 +2,7 @@
 
 ![Version 0.0.1](https://img.shields.io/badge/version-0.0.1-blue)
 
-An astrodynamics Rust library. Please note, I am in the process of building this to be used as a public crate. 
+An astrodynamics Rust library. Please note, I am in the process of building this to be used as a public crate. Updates will come as and when they're ready.
 
 # Build Instructions
 These instructions assume that Rust and Cargo are installed on your system. 
